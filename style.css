@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inika:wght@700&family=Overpass:ital@0;1&family=Petit+Formal+Script&family=Poppins:wght@300&display=swap');
+body{
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: #201e1e;
+}
+.offset:before {
+  height: 4rem;
+  margin-top: -4rem;
+  content: "";
+  display: block;
+}
+
+.navbar{
+  /*text-transform: uppercase;*/
+  color: white;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .05rem;
+  background:#ffffff9c!important;
+}
+.navbar-brand {
+  height: 2rem;
+}
+.navbar-nav li{
+  padding-right: .7rem;
+  
+}
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+  padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .navbar-link.active,
+.navbar-dark .navbar-nav .navbar-link::hover {
+  color: #F65859;
+}
+/*-----SLIDE----*/
+
+.carousel-item{
+  height: 100vh;
+}
+.carousel-caption{
+  position: absolute;
+  top: 38%;
+  width: 100%;
+  right: 0%;
+  left: 0%;
+}
+.carousel-caption h1{
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-shadow: .1rem .1rem .5rem black;
+
+}
+.carousel-caption h2{
+  /*font-family: 'Petit Formal Script', cursive;*/
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 1.6rem ;
+  text-shadow: .1rem .1rem .5rem black;
+
+}
+.btn-lg{
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-shadow: rgba(255, 255, 255, 0.192);
+}
+.btn-light{
+  text-shadow: rgba(0, 0, 0, 0.452);
+}
+
+
+
+/*============= RICETTE SECTION =============*/
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.barra{
+  background-color:#E9ECEF;
+}
+.spazio{
+  background-color: white;
+}
+.column {
+  float:inline-end;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+  position: relative;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: -7px;
+  left: -10px;
+  background-image: url(img/menù/sfondo.png);
+  padding: 0.1rem 0.8rem 0.1rem 0.8rem;
+}
+/*END RICETTE*/
+  
+
+.narrow {
+  width: 70%;
+  margin: 0 auto;
+}
+.lead{
+  padding-top: 1rem;
+}
+.btn-md {
+  border-width:thin;
+  border-radius: 0;
+  padding: .6rem 1.1rem;
+  text-transform: uppercase;
+  margin: 0.5rem;
+}
+.btn-secondary {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-color: #1EBBA3;
+  background-color: #1EBBA3;
+  color: white;
+ 
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  border-color: #1EBBA3;
+  background-color: #1EBBA3;
+  color: white;
+}
+.jumbotron {
+  border-radius: 0%;
+  padding:2rem 0rem 2rem;
+}
+h3.heading{
+  font-size: 1.9rem;
+  font-weight: 700;
+  padding-bottom: 1.5rem;
+}
+.heading-underline{
+  width: 3rem;
+  height:.2rem;
+  background-color: #F65859;
+  margin: -2rem auto -1rem ;
+
+}
+/**/
+.idee img{
+  max-width:100%;
+  max-height: 100%;
+
+}
+.row.no-padding [class*=col-]{
+  padding: 0;
+}
+.idee img:hover{
+  transform: scale(1.1);
+  cursor: zoom-in;
+
+}
+.idee {
+  overflow: hidden;
+}
+.card{
+  margin: 2rem;
+  }
+  /* CONTACT*/
+
+footer{
+  background-color: #E9ECEF;
+  color: black;
+  padding: 0.5rem 0 0;
+}
+footer img{
+  padding-bottom: 1rem;
+}
+footer a{
+  color: white;
+  }
+footer svg.svg-inline--fa:hover{
+  color: #F65859;
+}
+@media (max-width: 767px ){
+  .carousel-caption h1{
+    font-size: 2.3rem;
+  
+  }
+  .carousel-caption h3{
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem ;
+  
+  }
+  .btn-lg{
+    font-size: 1rem;
+  }
+  .narrow h1{
+    font-size: 1.5rem;
+
+  }
+  p.lead{
+    font-size: 1.1rem;
+  }
+}
