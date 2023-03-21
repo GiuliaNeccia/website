@@ -12,6 +12,7 @@ body{
   margin-top: -4rem;
   content: "";
   display: block;
+  font: optional;
 }
 
 .navbar{
